@@ -188,7 +188,7 @@ NAN_METHOD(CreateImage2D) {
 
   // Arg 4
   if(ARG_EXISTS(6)) {
-    int len =0;
+    size_t len =0;
     getPtrAndLen(info[6], host_ptr, len);
 
     if(!host_ptr || !len)
